@@ -1,0 +1,6 @@
+useDynLib(LRCUDA)
+import(ROCR)
+import(parallel)
+import(doParallel)
+import(foreach)
+exportPattern("^[[:alpha:]]+")

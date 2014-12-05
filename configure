@@ -1,0 +1,21 @@
+#This sricpt is to check CUDA environment.
+
+
+if [ -z $CUDA_HOME ]
+then
+    echo "error: Please Set the correct environment variable CUDA_HOME !"
+    exit 1 
+fi
+
+if [ -z $LD_LIBRARY_PATH ]
+then 
+    echo "error: Please Set the correct environment variable LD_LIBRARY_PATH !"
+    exit 1 
+fi
+
+         
+       
+
+ 
+   
+

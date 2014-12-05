@@ -1,0 +1,29 @@
+iFes: An incremental feature selection algorithm for gene expression profile accelerated by NVIDIA GPU.(some install hints are referred to R package gputools.)
+
+=========
+Prerequisites for iFes:
+
+1. A CUDA capability 1.3 or higher NVIDIA GPU, you can find GPU list which support CUDA program framework.
+2. NVIDIA CUDA 5.5 or higher toolkit, you can get from https://developer.nvidia.com/cuda-downloads.
+
+To install the package, you must first install Nvidia's CUDA 5.5 toolkit available from
+
+=========
+
+Installation Hints
+
+Set and export the environment variable CUDA_HOME. In most cases, something like this will do:
+
+export CUDA_HOME=/usr/local/cuda/5.5
+
+Set your LD_LIBRARY_PATH to include CUDA's library directory. In most cases, something like this will do:
+
+export LD_LIBRARY_PATH=/usr/local/cuda/5.5/lib64:$LD_LIBRARY_PATH
+
+Use R to install the source package. For example, something like this will do:
+
+R CMD INSTALL iFes*.tar.gz
+
+You can edit the file iFes/src/config.mk to suit your particular environment if the installation failed.
+
+
